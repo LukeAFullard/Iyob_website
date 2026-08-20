@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { MainLayout } from '@/components/MainLayout';
 import { AppCard } from '@/components/AppCard';
 import { BlogCard } from '@/components/BlogCard';
+import { Logo } from '@/components/Logo';
 import { apps } from '@/content/apps';
 import { posts } from '@/content/posts';
 
@@ -10,7 +11,12 @@ export default function HomePage() {
   return (
     <MainLayout>
       {/* 1. Hero Section */}
-      <section className="py-12 md:py-20 max-w-4xl mx-auto text-center">
+      <section className="py-8 md:py-16 max-w-4xl mx-auto text-center">
+        {/* Official Brand Graphic Banner */}
+        <div className="mb-8 overflow-hidden rounded-panel shadow-md border border-graphite/10 dark:border-white/10">
+          <Logo variant="banner" />
+        </div>
+
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-signal/15 text-signal-dim dark:text-signal text-xs font-mono font-medium mb-6 border border-signal/25">
           <span>Privacy-First</span>
           <span>•</span>
