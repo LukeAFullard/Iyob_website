@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #10161C;
+  --color-stone: #EEF0EC;
+  --color-graphite: #26313A;
+  --color-signal: #D9A54A;
+  --color-signal-dim: #8A6A2F;
+  --color-verdigris: #3E7368;
+  --color-verdigris-dim: #295148;
+  --color-rust: #B85C3E;
+
+  --radius-panel: 8px;
+
+  --font-sans: var(--font-ibm-plex-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-ibm-plex-mono), ui-monospace, monospace;
+}
+
+/* Custom utility classes matching TD design system specs */
+.panel-card {
+  background-color: #ffffff;
+  border: 1px solid rgba(38, 49, 58, 0.2);
+  border-radius: 8px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+@media (prefers-color-scheme: dark) {
+  .panel-card {
+    background-color: #26313A;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
+  }
+}
+
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px #D9A54A;
+}
