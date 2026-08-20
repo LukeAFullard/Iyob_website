@@ -17,11 +17,13 @@ export const Logo: React.FC<LogoProps> = ({
   variant = 'full',
   showText = true,
 }) => {
+  const basePath = process.env.NODE_ENV === 'production' ? '/Iyob_website' : '';
+
   if (variant === 'banner') {
     return (
       <Link href="/" className={`inline-block hover:opacity-95 transition-opacity ${className}`}>
         <Image
-          src="/iYOB.svg"
+          src={`${basePath}/iYOB.svg`}
           alt="InYourOwnBrowser Logo Banner"
           width={980}
           height={200}
@@ -39,7 +41,7 @@ export const Logo: React.FC<LogoProps> = ({
         className={`inline-flex items-center hover:opacity-90 transition-opacity focus-visible:ring-2 focus-visible:ring-signal focus-visible:ring-offset-2 rounded ${className}`}
       >
         <Image
-          src="/iYOB_small.svg"
+          src={`${basePath}/iYOB_small.svg`}
           alt="InYOB"
           width={120}
           height={40}
@@ -57,7 +59,7 @@ export const Logo: React.FC<LogoProps> = ({
         className={`inline-flex items-center hover:opacity-90 transition-opacity focus-visible:ring-2 focus-visible:ring-signal focus-visible:ring-offset-2 rounded ${className}`}
       >
         <Image
-          src="/iYOB_logo.svg"
+          src={`${basePath}/iYOB_logo.svg`}
           alt="InYOB Logo"
           width={36}
           height={36}
@@ -74,7 +76,7 @@ export const Logo: React.FC<LogoProps> = ({
       className={`inline-flex items-center gap-2.5 font-bold tracking-tight text-graphite dark:text-stone hover:opacity-90 transition-opacity focus-visible:ring-2 focus-visible:ring-signal focus-visible:ring-offset-2 rounded ${className}`}
     >
       <Image
-        src="/iYOB_logo.svg"
+        src={`${basePath}/iYOB_logo.svg`}
         alt="InYOB Logo"
         width={36}
         height={36}

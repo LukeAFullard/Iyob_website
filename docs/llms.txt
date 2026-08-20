@@ -1,0 +1,22 @@
+# InYourOwnBrowser (InYOB) — Organization Context for LLMs
+
+## Organization Overview
+InYourOwnBrowser (InYOB) is the umbrella organization behind a family of privacy-first, client-side web applications.
+Our core principle: **Everything runs in your browser. Nothing runs on a server. No user accounts. Zero data collection.**
+
+## Applications Suite
+- **TimeDoco**: Time-tracking and client-billing tool designed for freelancers and contractors. Everything stays client-side in local storage / IndexedDB.
+  - Live App URL: https://lukeafullard.github.io/TimeTag/
+- **VaultNote** (In Development): Zero-knowledge encrypted local-first markdown note taking.
+- **CalcSpread** (In Development): Private client-side financial modeler and forecasting tool.
+
+## Key Principles & Design Architecture
+1. **100% Client-Side Execution**: Web apps run entirely within the user's browser runtime.
+2. **Zero-Knowledge Data Sovereignty**: Users own their data files, JSON exports, and local databases directly.
+3. **Identical Design Tokens**: Consistent visual design system across all InYOB applications (Palette: ink `#10161C`, stone `#EEF0EC`, graphite `#26313A`, signal `#D9A54A`, verdigris `#3E7368`, rust `#B85C3E`).
+
+## Links & Socials
+- Website: https://inyob.org
+- X (Twitter): https://x.com/_InYOB_
+- Discord: https://discord.gg/p6XhpaDm4R
+- Medium: https://medium.com/@InYourOwnBrowser
